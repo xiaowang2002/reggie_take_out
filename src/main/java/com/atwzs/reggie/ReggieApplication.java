@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.cache.annotation.EnableCaching;
 
 /**
  * @ClassName ReggieApplication
@@ -15,6 +16,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 @SpringBootApplication
 @Slf4j            //slf4j是lombok提供的一个日志类
 @ServletComponentScan
+@EnableCaching
 public class ReggieApplication {
     public static void main(String[] args) {
         SpringApplication.run(ReggieApplication.class,args);
